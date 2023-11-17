@@ -15,17 +15,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      //! Crear unas rutas de navegacion
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+
+      //Crear rutas de navegacion
       initialRoute: "Home",
       routes: <String, WidgetBuilder>{
-        "Home":(BuildContext context) => MyHomePage(),
-        "Sing_in":(BuildContext context) => SingIn(),
-        "Sing_up":(BuildContext context) => SingUp(),
-
+        "Home": (BuildContext context) => MyHomePage(),
+        "Sing_in": (BuildContext context) => SingIn(),
+        "Sing_up": (BuildContext context) => SingUp(),
       },
     );
   }

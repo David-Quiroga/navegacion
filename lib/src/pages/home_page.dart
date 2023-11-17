@@ -21,8 +21,8 @@ class _MyHomePageState extends State<MyHomePage> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: <Color>[
-                Color.fromARGB(255, 77, 199, 224),
-                Color.fromARGB(20, 184, 180, 154)
+                Color.fromARGB(255, 165, 77, 224),
+                Color.fromARGB(19, 65, 11, 190)
               ],
               begin: Alignment.topCenter,
             ),
@@ -34,12 +34,12 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 width: 100.0, // Ajusta el ancho de la imagen según tus necesidades
                 height: 100.0, // Ajusta la altura de la imagen según tus necesidades
-                child: Image.asset("images/lobo.jpg"),
+                child: Image.asset("images/descarga.jpg"),
               ),
               Text(
                 "Bienvenidos a mi curso",
                 style: TextStyle(
-                  fontFamily: "PermanentMarker",
+                  fontFamily: "Agbalumo",
                   fontSize: 30.0,
                 ),
               ),
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Text(
                 "Ejercicio N.-003",
                 style: TextStyle(
-                  fontFamily: "PermanentMarker",
+                  fontFamily: "Agbalumo",
                   fontSize: 40.0,
                 ),
               ),
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     "SING UP",
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
-                      fontFamily: "FredokaOne",
+                      fontFamily: "Agbalumo",
                       fontSize: 30.0,
                     ),
                   ),
@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     "SING IN",
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
-                      fontFamily: "FredokaOne",
+                      fontFamily: "Agbalumo",
                       fontSize: 30.0,
                     ),
                   ),

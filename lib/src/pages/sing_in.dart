@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:navegar/src/pages/sing_up.dart';
+import 'package:navegar/src/pages/home_page.dart';
+import 'package:navegar/src/widgets/icon_containers.dart';
 import 'package:navegar/src/widgets/login_form.dart';
 
 class SingIn extends StatefulWidget {
@@ -15,30 +16,22 @@ class _SingInState extends State<SingIn> {
     return Container(
       child: Scaffold(
         body: Container(
-          width: double.infinity,
+          width: double.infinity, //Se ajusta al tamaño
           height: double.infinity,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: <Color>[
-                Color.fromARGB(255, 77, 199, 224),
-                Color.fromARGB(20, 184, 180, 154)
-              ],
-              begin: Alignment.topCenter,
-            ),
-          ),
+              gradient: LinearGradient(colors: <Color>[
+            Color.fromARGB(255, 165, 77, 224),
+            Color.fromARGB(19, 65, 11, 190)
+          ], begin: Alignment.topCenter)),
           child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 200),
             children: <Widget>[
-              //! Aquí se ubica el URL de una imagen
-              SizedBox(
-                width: 100.0, // Ajusta el ancho de la imagen según tus necesidades
-                height: 100.0, // Ajusta la altura de la imagen según tus necesidades
-                child: Image.asset("images/lobo.jpg"),
-              ),
+              //!Aqui se ubica el URL de una imagen
+              IconContainers(url: "images/descarga.jpg"),
               Text(
-                "LOGIN",
+                "Login",
                 style: TextStyle(
-                  fontFamily: "PermanentMarker",
+                  fontFamily: "Agbalumo",
                   fontSize: 30.0,
                 ),
               ),
@@ -46,17 +39,19 @@ class _SingInState extends State<SingIn> {
                 height: 30.0,
               ),
               Text(
-                "Ejercicio N.-003",
+                "Pantalla 2",
                 style: TextStyle(
-                  fontFamily: "PermanentMarker",
+                  fontFamily: "Agbalumo",
                   fontSize: 40.0,
                 ),
               ),
+
               Divider(
                 height: 30.0,
               ),
-              //! Llamamos a la pantalla del formulario
+//aqui llamanos a la pantalla de formulario
               LoginForm()
+
             ],
           ),
         ),

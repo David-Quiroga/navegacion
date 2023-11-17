@@ -3,22 +3,21 @@ import 'package:flutter/material.dart';
 class InputText extends StatelessWidget {
   final String label;
   final String hint;
-  final Icon icono;
-  final TextInputType keyboard ;
+  final Icon? icono;
+  final TextInputType keyboard;
   final bool obsecure;
-  final void Function(String data) onChanged;
-  final String Function(String data) validator;
+  final void Function(String? data)? onChanged;
+  final String Function(String? data)? validator;
   const InputText({
-    key, 
-    this.label ="",
-    this.hint ="",
-    required this.icono,
+    key,
+    this.label = "",
+    this.hint = "",
+     this.icono,
     this.keyboard = TextInputType.text,
     this.obsecure = false,
-    required this.onChanged,
-    required this.validator, 
-    }) : super(key: key);
-
+    this.onChanged,
+    this.validator,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,18 +26,15 @@ class InputText extends StatelessWidget {
         keyboardType: this.keyboard,
         obscureText: this.obsecure,
         onChanged: this.onChanged,
-        //validator: this.validator,
+        validator: this.validator,
         decoration: InputDecoration(
-          hintText: this.hint,
-          labelText: this.label,
-          labelStyle: TextStyle(
-            color: Colors.amber,
-            fontFamily: "Agbalumo",
-            fontSize: 25,
-          ),
-          suffixIcon: this.icono,
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(20))
-        ),
+            hintText: this.hint,
+            labelText: this.label,
+            labelStyle: TextStyle(
+                color: Colors.black, fontFamily: "Agbalumo", fontSize: 25.0),
+            suffixIcon: this.icono,
+            border:
+                OutlineInputBorder(borderRadius: BorderRadius.circular(20.0))),
       ),
     );
   }

@@ -1,7 +1,3 @@
-navegar
-2.18
-file:///C:/cuarto_a/navegacion/navegar/
-file:///C:/cuarto_a/navegacion/navegar/lib/
 async
 2.14
 file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/
@@ -94,4 +90,8 @@ flutter_test
 2.17
 file:///C:/flutter/packages/flutter_test/
 file:///C:/flutter/packages/flutter_test/lib/
+navegar
+2.18
+file:///C:/navegacion/
+file:///C:/navegacion/lib/
 2
