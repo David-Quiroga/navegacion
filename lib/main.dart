@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navegar/src/pages/home_page.dart';
+import 'package:navegar/src/pages/menu_lateral.dart';
 import 'package:navegar/src/pages/sing_in.dart';
 import 'package:navegar/src/pages/sing_up.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         "Home":(BuildContext context) => MyHomePage(),
         "Sing_in":(BuildContext context) => SingIn(),
         "Sing_up":(BuildContext context) => SingUp(),
+        "MenuLateral":(BuildContext context) => MenuLateral()
 
       },
     );
