@@ -61,10 +61,25 @@ class _LoginFormState extends State<LoginForm> {
             height: 40.0,
             child: ElevatedButton(
               onPressed: () {
-                    final route =
-                        MaterialPageRoute(builder: (context) => MenuLateral());
-                    Navigator.push(context, route);
-                  },
+                if (_email == "dsa.quiroga@yavirac.edu" && _password == "1234") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const MenuLateral()),
+                  );
+                } else {
+                  final snackBar = SnackBar(
+                    content: Text('Los datos ingresados son incorrectos'),
+                    action: SnackBarAction(
+                      label: 'Cerrar',
+                      onPressed: () {
+                        // Puedes agregar alguna acción al presionar el botón en el SnackBar
+                      },
+                    ),
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                }
+              },
               child: Text(
                 "Ingresar",
                 style: TextStyle(
