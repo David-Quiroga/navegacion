@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
       //Crear rutas de navegacion
       initialRoute: "Home",
       routes: <String, WidgetBuilder>{
-        "Home": (BuildContext context) => MyHomePage(),
-        "Sing_in": (BuildContext context) => SingIn(),
-        "Sing_up": (BuildContext context) => SingUp(),
+        "Home":(BuildContext context) => MyHomePage(),
+        "Sing_in":(BuildContext context) => SingIn(),
+        "Sing_up":(BuildContext context) => SingUp()
       },
     );
   }

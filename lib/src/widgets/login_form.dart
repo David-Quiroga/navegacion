@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegar/src/pages/menu_lateral.dart';
 import 'package:navegar/src/widgets/input_text.dart';
 
 class LoginForm extends StatefulWidget {
@@ -59,7 +60,26 @@ class _LoginFormState extends State<LoginForm> {
             width: 300.0,
             height: 40.0,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                if (_email == "dsa.quiroga@yavirac.edu" && _password == "1234") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const MenuLateral()),
+                  );
+                } else {
+                  final snackBar = SnackBar(
+                    content: Text('Los datos ingresados son incorrectos'),
+                    action: SnackBarAction(
+                      label: 'Cerrar',
+                      onPressed: () {
+                        // Puedes agregar alguna acción al presionar el botón en el SnackBar
+                      },
+                    ),
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                }
+              },
               child: Text(
                 "Ingresar",
                 style: TextStyle(
