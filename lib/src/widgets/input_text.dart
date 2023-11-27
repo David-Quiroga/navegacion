@@ -12,7 +12,7 @@ class InputText extends StatelessWidget {
     key,
     this.label = "",
     this.hint = "",
-     this.icono,
+    this.icono,
     this.keyboard = TextInputType.text,
     this.obsecure = false,
     this.onChanged,
@@ -30,8 +30,7 @@ class InputText extends StatelessWidget {
         decoration: InputDecoration(
             hintText: this.hint,
             labelText: this.label,
-            labelStyle: TextStyle(
-                color: Colors.black, fontFamily: "Agbalumo", fontSize: 25.0),
+            labelStyle: TextStyle(color: Colors.black, fontSize: 25.0),
             suffixIcon: this.icono,
             border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(20.0))),
